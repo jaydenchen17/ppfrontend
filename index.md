@@ -14,4 +14,3 @@ First we will have you calculate your daily calorie maintenence about, by inputt
 
 
 
-STICKING OUT YOUR GYATT FOR THE RIZZLER, YOURE SO SKIBBIDI, YOURE SO FANUM TAX, i just wannnaaaa bee yourrrr sigmaaaaaa... yo chat this is rizzzz
