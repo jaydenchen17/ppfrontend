@@ -11,6 +11,8 @@ For our passion project we decided to create a program that will help you on you
 
 First we will have you calculate your daily calorie maintenence about, by inputting your age, weight, height, gender, and activity level. We will store this information with your user in our backend. Then we will use this information to create a plan based on your goals and your diet. If you want to lose weight we will suggest foods and excersizes thats more cardio based to help you acheive your fitness goals.
 
+# What we are working on
 
-Heres a change to see if Wills commit worked
-Jaydens slacking
+- Getting an idea on how to create users for the back end, how the code will work and look
+- Making the interface on the front end look easy to use and have a miniamlaistic desing
+- Add fun gifs and animations that show succsess or errors to keep on trying
