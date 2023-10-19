@@ -3,13 +3,13 @@ layout: default
 title: Home
 ---
 
-
+## Our Project Layout
 ## Welcome to our Customized Fitness Plan Creation Program
-For our passion project we decided to create a program that will help you on your way to achieve your dream physique. This prpgram can help you on your journey to gain or lose weight and obtain your dream physique, promoting a healthier lifestyle. 
+For our passion project, we've chosen to develop a program that can support you in your pursuit of attaining your desired body shape. This program is designed to aid you in either gaining or losing weight, helping you work towards your ideal physique while promoting a healthier lifestyle
 
 ## How Our Program Works
 
-First we will have you calculate your daily calorie maintenence about, by inputting your age, weight, height, gender, and activity level. We will store this information with your user in our backend. Then we will use this information to create a plan based on your goals and your diet. If you want to lose weight we will suggest foods and excersizes thats more cardio based to help you acheive your fitness goals.
+To begin, you'll determine your daily calorie maintenance by providing details such as your age, weight, height, gender, and activity level. This information will be securely stored in our backend associated with your user profile. Subsequently, we'll utilize this data to formulate a personalized plan aligned with your objectives and dietary preferences. If your goal is weight loss, we'll recommend a combination of cardio-focused exercises and suitable foods to assist you in reaching your fitness targets.
 
 <p>Try our program by clicking the "Calculate" Button below:</p>
 <button><a href="https://www.google.com/search?sca_esv=569384727&q=smurf+cat+meme&tbm=vid&source=lnms&sa=X&ved=2ahUKEwidooPHqM-BAxXKMUQIHRsGCGEQ0pQJegQICRAB&biw=1440&bih=702&dpr=2&safe=active&ssui=on#fpstate=ive&vld=cid:b4627ef3,vid:Gmc00FKuH70,st:0">Click to see Smurf Cat Before you use the Calculator</a></button>
