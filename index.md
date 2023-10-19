@@ -50,3 +50,4 @@ First we will have you calculate your daily calorie maintenence about, by inputt
 - Getting an idea on how to create users for the back end, how the code will work and look
 - Making the interface on the front end look easy to use and have a miniamlaistic desing
 - Add fun gifs and animations that show succsess or errors to keep on trying
+- adding presets to calorie calculator so you can lose or gain weight
