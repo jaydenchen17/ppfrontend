@@ -13,7 +13,7 @@ permalink: /CalCalc/home
 
 ## Welcome to our Daily Calorie Maintenance Calculator
 
-For our passion project we decided to create a program that calculates the number of calories you need to consume each day in order to maintain your weight. Thi prpgram can help you on your journey to gain or lose weight and obtain your dream physique, promoting a healthier lifestyle. 
+For our passion project we decided to create a program that calculates the number of calories you need to consume each day in order to maintain your weight. This prpgram can help you on your journey to gain or lose weight and obtain your dream physique, promoting a healthier lifestyle. We are going to add presets so it can give you the recomended calories to consume to either gain or lose weight based on your body weight, height, age, and gender.
 
 <p>Try our program by clicking the "Calculate" Button below:</p>
 <button><a href="https://www.google.com/search?sca_esv=569384727&q=smurf+cat+meme&tbm=vid&source=lnms&sa=X&ved=2ahUKEwidooPHqM-BAxXKMUQIHRsGCGEQ0pQJegQICRAB&biw=1440&bih=702&dpr=2&safe=active&ssui=on#fpstate=ive&vld=cid:b4627ef3,vid:Gmc00FKuH70,st:0">Click to see Smurf Cat Before you use the Calculator</a></button>
