@@ -5,7 +5,11 @@ title: Home
 
 ## Our Project Layout
 ## Welcome to our Customized Fitness Plan Creation Program
-For our passion project we decided to create a program that will help you on your way to achieve your dream physique. This prpgram can help you on your journey to gain or lose weight and obtain your dream physique, promoting a healthier lifestyle. 
+For our passion project, we've chosen to develop a program that can support you in your pursuit of attaining your desired body shape. This program is designed to aid you in either gaining or losing weight, helping you work towards your ideal physique while promoting a healthier lifestyle.
+
+
+
+
 
 ## How Our Program Works
 
