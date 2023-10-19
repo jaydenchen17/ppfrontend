@@ -1,0 +1,64 @@
+---
+layout: default
+title: Home
+---
+
+<head>
+    <title>Calorie Calculator</title>
+</head>
+<body>
+    <h1>Calorie Calculator</h1>
+    <form id="calorie-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required><br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" required><br><br>
+
+        <label for="activity">Activity Level:</label>
+        <select id="activity" name="activity">
+            <option value="sedentary">Sedentary</option>
+            <option value="lightly_active">Lightly Active</option>
+            <option value="moderately_active">Moderately Active</option>
+            <option value="very_active">Very Active</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <input type="submit" value="Calculate Calories">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("calorie-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+
+            // Send the data to your backend using AJAX
+            fetch('/Users/Jayden.Chen/vscode/ppbackend/api/CalCalc.py', { // Replace with the URL to your backend script
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the result in the 'result' div
+                document.getElementById('result').innerHTML = `Calorie Maintenance: ${data.calorie_maintenance} kcal`;
+            })
+            .catch(error => {
+                console.error('An error occurred:', error);
+            });
+        });
+    </script>
+</body>
