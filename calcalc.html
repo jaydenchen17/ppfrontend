@@ -51,16 +51,14 @@ title: Home
             // Harris-Benedict equation constants
             const MALE_MULTIPLIER = 88.362;
             const FEMALE_MULTIPLIER = 447.593;
-            const HEIGHT_MULTIPLIER = 3.351;
-            const WEIGHT_MULTIPLIER = 4.799;
             const AGE_MULTIPLIER = 5.677;
 
             let bmr;
 
             if (gender === 'male') {
-                bmr = MALE_MULTIPLIER + WEIGHT_MULTIPLIER * weight + HEIGHT_MULTIPLIER * height - AGE_MULTIPLIER * age;
+                bmr = MALE_MULTIPLIER + 13.397 * weight + 4.799 * height - AGE_MULTIPLIER * age;
             } else {
-                bmr = FEMALE_MULTIPLIER + WEIGHT_MULTIPLIER * weight + HEIGHT_MULTIPLIER * height - AGE_MULTIPLIER * age;
+                bmr = FEMALE_MULTIPLIER + 9.247 * weight + 3.098 * height - AGE_MULTIPLIER * age;
             }
 
             const activity_multipliers = {
