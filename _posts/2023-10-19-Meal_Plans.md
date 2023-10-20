@@ -115,3 +115,64 @@ A glass of bourbon on the rocks (2 oz) - 100 calories
 Dessert (100-200 calories):
 <br>
 Apple pie with a scoop of vanilla ice cream - 200 calories
+
+## 4750+ Calories
+- With this amount of calories, you are on the huge side as a person and to maintain this amount of calories should be pretty difficult. Those who purpously need to eat this amount will always be pushing and eating as much as they can to maintain this amoutn of intake
+<br>
+Breakfast:
+<br>
+Scrambled eggs (2 large eggs): ~140 calories
+Avocado (1/2 avocado): ~120 calories
+Whole-grain toast (2 slices): ~200 calories
+Greek yogurt (6 oz): ~150 calories
+Honey (1 tablespoon): ~64 calories
+Mixed berries (1 cup): ~60 calories
+Whole milk (1 cup): ~150 calories
+Total Breakfast Calories: ~884 calories
+<br>
+Morning Snack:
+<br>
+Protein shake (1 serving): ~350-450 calories
+
+<br>
+Lunch:
+<br>
+Grilled chicken breast (6 oz): ~220 calories
+Tofu (6 oz): ~150 calories
+Quinoa (1 cup cooked): ~220 calories
+Mixed vegetables (1 cup): ~50 calories
+Salad with avocado, nuts, and dressing: ~400-600 calories
+Brown rice (1 cup cooked): ~215 calories
+Sweet potatoes (1 medium): ~180 calories
+Total Lunch Calories: ~1,435-1,615 calories
+<br>
+Afternoon Snack:
+<br>
+Hummus (2 oz): ~100 calories
+Whole-grain pita bread (1 whole pita): ~150 calories
+Mixed nuts (1 oz): ~170 calories
+Total Afternoon Snack Calories: ~420 calories
+<br>
+Dinner:
+<br>
+Baked salmon (6 oz): ~367 calories
+Lentils (1 cup cooked): ~230 calories
+Tempeh (6 oz): ~320 calories
+Steamed broccoli (1 cup): ~55 calories
+Steamed carrots (1 cup): ~45 calories
+Olive oil (1 tablespoon): ~120 calories
+Quinoa (1 cup cooked): ~220 calories
+Brown rice (1 cup cooked): ~215 calories
+Total Dinner Calories: ~1,352 calories (if choosing salmon), ~1,652 calories (if choosing lentils), or ~1,692 calories (if choosing tempeh)
+<br>
+Evening Snack:
+<br>
+Smoothie (1 serving): ~300-450 calories
+Cheese (1 oz): ~100-120 calories
+Whole-grain crackers (5-6 crackers): ~100-150 calories
+Total Evening Snack Calories: ~500-720 calories
+<br>
+Before Bed:
+<br>
+Whole milk (1 cup): ~150 calories
+Total Before Bed Calories: ~150 calories
