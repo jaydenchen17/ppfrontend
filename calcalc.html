@@ -35,31 +35,45 @@ title: Home
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
 
-        <input type="submit" value="Calculate Calories">
+        <input type="button" value="Calculate Calories" onclick="calculateCalories()">
     </form>
 
     <div id="result"></div>
 
     <script>
-        document.getElementById("calorie-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            const form = e.target;
-            const formData = new FormData(form);
+        function calculateCalories() {
+            const age = parseFloat(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const activity = document.getElementById('activity').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
 
-            // Send the data to your backend using AJAX
-            fetch('/Users/Jayden.Chen/vscode/ppbackend/api/CalCalc.py', { // Replace with the URL to your backend script
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Display the result in the 'result' div
-                document.getElementById('result').innerHTML = `Calorie Maintenance: ${data.calorie_maintenance} kcal`;
-            })
-            .catch(error => {
-                console.error('An error occurred:', error);
-            });
-        });
+            // Harris-Benedict equation constants
+            const MALE_MULTIPLIER = 88.362;
+            const FEMALE_MULTIPLIER = 447.593;
+            const HEIGHT_MULTIPLIER = 3.351;
+            const WEIGHT_MULTIPLIER = 4.799;
+            const AGE_MULTIPLIER = 5.677;
+
+            let bmr;
+
+            if (gender === 'male') {
+                bmr = MALE_MULTIPLIER + WEIGHT_MULTIPLIER * weight + HEIGHT_MULTIPLIER * height - AGE_MULTIPLIER * age;
+            } else {
+                bmr = FEMALE_MULTIPLIER + WEIGHT_MULTIPLIER * weight + HEIGHT_MULTIPLIER * height - AGE_MULTIPLIER * age;
+            }
+
+            const activity_multipliers = {
+                'sedentary': 1.2,
+                'lightly_active': 1.375,
+                'moderately_active': 1.55,
+                'very_active': 1.725
+            };
+
+            const calorie_maintenance = bmr * activity_multipliers[activity];
+
+            document.getElementById('result').innerHTML = `Calorie Maintenance: ${calorie_maintenance.toFixed(2)} kcal`;
+        }
     </script>
 </body>
 
