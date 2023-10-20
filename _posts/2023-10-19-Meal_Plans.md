@@ -1,3 +1,13 @@
+---
+toc: false
+comments: true
+layout: post
+title: Meal Plans
+type: plans
+courses: { compsci: {week: 7} }
+permalink: /mealplans
+---
+
 ## Meal Plans
 
 <br>
