@@ -23,3 +23,4 @@ To begin, you'll determine your daily calorie maintenance by providing details s
 - Making the interface on the front end look easy to use and have a miniamlaistic desing
 - Add fun gifs and animations that show succsess or errors to keep on trying
 - adding presets to calorie calculator so you can lose or gain weight
+- Add names and users so you can enter your username and track your goals (connect frontend to backend to store datat)
