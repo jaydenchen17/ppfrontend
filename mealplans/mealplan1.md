@@ -1,3 +1,12 @@
+---
+toc: false
+comments: true
+layout: post
+title: Meal Plan 1
+type: plans
+permalink: /mealplan1.md
+---
+
 ## Meal Plan 1: 1,000 Calories
 <br>
 Breakfast (250 calories):

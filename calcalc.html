@@ -72,7 +72,32 @@ title: Home
             saveUserDataOnServer(userData);
 
             // Display the result
-            document.getElementById('result').innerHTML = `Hello, ${username}! Your Calorie Maintenance is: ${calorie_maintenance.toFixed(2)} kcal`;
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Hello, ${username}! Your Calorie Maintenance is: ${calorie_maintenance.toFixed(2)} kcal`;
+
+            // If calorie maintenance is under 1000, display a simple link to meal plan 1
+            if (calorie_maintenance < 1000) {
+                const mealPlanLink = document.createElement('a');
+                mealPlanLink.href = '/student/mealplans/mealplan1'; // Meal plan 1 (for calorie maintenance under 1000)
+                mealPlanLink.innerText = 'View Meal Plan';
+                resultDiv.appendChild(mealPlanLink);
+            } else {
+                // Calculate the meal plan number based on calorie maintenance
+                const mealPlanNumber = Math.floor((calorie_maintenance - 1000) / 250) + 2;
+
+                // Create a button for the meal plan
+                const mealPlanButton = document.createElement('button');
+                mealPlanButton.innerHTML = `View Meal Plan ${mealPlanNumber}`;
+
+                mealPlanButton.addEventListener('click', () => {
+                    // Set the link to the corresponding meal plan based on the meal plan number
+                    const mealPlanLink = `/student/mealplans/mealplan${mealPlanNumber}`;
+                    window.location.href = mealPlanLink;
+                });
+
+                // Append the button to the result div
+                resultDiv.appendChild(mealPlanButton);
+            }
         }
 
         function calculateClientCalories(userData) {
