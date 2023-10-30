@@ -119,6 +119,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (500 calories):
 <br>
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (500 calories)
+
 ## Meal Plan 6: 2,250 Calories
 
 Breakfast (562.5 calories):
@@ -134,6 +135,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (562.5 calories):
 
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (562.5 calories)
+
 ## Meal Plan 7: 2,500 Calories
 
 Breakfast (625 calories):
@@ -148,6 +150,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (625 calories):
 
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (625 calories)
+
 ## Meal Plan 8: 2,750 Calories
 
 Breakfast (687.5 calories):
@@ -162,6 +165,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (687.5 calories):
 
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (687.5 calories)
+
 ## Meal Plan 9: 3,000 Calories
 
 Breakfast (750 calories):
@@ -176,6 +180,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (750 calories):
 
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (750 calories)
+
 ## Meal Plan 10: 3,250 Calories
 
 Breakfast (812.5 calories):
@@ -190,6 +195,7 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 Dinner (812.5 calories):
 
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (812.5 calories)
+
 ## Meal Plan 11: 3,500 Calories
 
 Breakfast (875 calories):
