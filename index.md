@@ -15,7 +15,7 @@ To begin, you'll determine your daily calorie maintenance by providing details s
 <button><a href="https://www.google.com/search?sca_esv=569384727&q=smurf+cat+meme&tbm=vid&source=lnms&sa=X&ved=2ahUKEwidooPHqM-BAxXKMUQIHRsGCGEQ0pQJegQICRAB&biw=1440&bih=702&dpr=2&safe=active&ssui=on#fpstate=ive&vld=cid:b4627ef3,vid:Gmc00FKuH70,st:0" style="color: black; text-decoration: none;">Click to see Smurf Cat Before you use the Calculator</a></button>
 
 
-<button><a href="/ppfrontend/calcalc.html" style="color: black; text-decoration: none;">Calculate Calories</a></button>
+<button><a href="/student/calcalc.html" style="color: black; text-decoration: none;">Calculate Calories</a></button>
 
 ## What We Are Working On
 
