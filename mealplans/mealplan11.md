@@ -27,3 +27,5 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 <span style="font-size: 16px;">Dinner (875 calories):</span>
 <br>
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (875 calories)
+
+<a href="" class="button">Home</a>
