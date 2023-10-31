@@ -28,4 +28,4 @@ Hummus with whole-grain pita bread, sliced vegetables, and a serving of cheese w
 <br>
 Baked salmon with brown rice, steamed broccoli, and a hummus and cracker snack (1,000 calories)
 
-<a href="" class="button">Home</a>
+<a href="https://jaydenchen17.github.io/student/" class="button" style="color: black; background-color: grey;">Home</a>

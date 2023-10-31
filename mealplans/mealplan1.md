@@ -41,3 +41,5 @@ Baked salmon (180 calories)
 Steamed broccoli (40 calories)
 <br>
 Quinoa (30 calories)
+
+<a href="https://jaydenchen17.github.io/student/" class="button" style="color: black; background-color: grey;">Home</a>
