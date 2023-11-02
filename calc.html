@@ -96,6 +96,7 @@ permalink: /calcalculator
         <div id="result"></div>
     </div>
 
+
     <script>
 
         function calculateClientCalories(userData) {
@@ -150,6 +151,21 @@ permalink: /calcalculator
 
             // Calculate the calorie maintenance on the client side
             const calorie_maintenance = calculateClientCalories(userData);
+            // Calculate the meal plan based on calorie maintenance
+            let mealPlan = '';
+            let mealPlanNumber = 0; // Initialize mealPlanNumber
+            if (calorie_maintenance < 1000) {
+                mealPlan = 'Meal Plan 1';
+            } else {
+                mealPlanNumber = Math.floor((calorie_maintenance - 1000) / 250) + 1;
+                mealPlan = `Meal Plan ${mealPlanNumber}`;
+            }
+
+            // Add calorie maintenance and meal plan to the user data
+            userData.calorieMaintenance = calorie_maintenance;
+            userData.mealPlan = mealPlan;
+            userData.mealPlanNumber = mealPlanNumber; // Store mealPlanNumber
+
             saveUserDataLocally(userData);
 
             // Redirect to the user data page with a query parameter for calorie maintenance

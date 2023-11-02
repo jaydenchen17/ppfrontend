@@ -2,17 +2,54 @@
 layout: help
 permalink: /user_data.html
 ---
-
 <html>
 <head>
     <title>User Data</title>
     <style>
-        /* Your CSS styling for the data table here */
+        /* CSS styling for the data table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            color: black; /* Set text color to black */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: black; /* Set text color to black */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <h1>User Data</h1>
     <table>
+        <br>
         <thead>
             <tr>
                 <th>Username</th>
@@ -21,6 +58,8 @@ permalink: /user_data.html
                 <th>Height</th>
                 <th>Activity Level</th>
                 <th>Gender</th>
+                <th>Calorie Maintenance</th>
+                <th>Meal Plan</th>
             </tr>
         </thead>
         <tbody id="user-data-table">
@@ -37,6 +76,9 @@ permalink: /user_data.html
 
         // Loop through user data and create rows in the table
         userDataTable.forEach(userData => {
+            // Round calorie maintenance to the nearest whole value
+            const roundedCalorieMaintenance = Math.round(userData.calorieMaintenance);
+
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${userData.username}</td>
@@ -45,9 +87,24 @@ permalink: /user_data.html
                 <td>${userData.height}</td>
                 <td>${userData.activity}</td>
                 <td>${userData.gender}</td>
+                <td>${roundedCalorieMaintenance}</td>
+                <td><a href="/ppfrontend/mealplans/mealplan${userData.mealPlanNumber}">${userData.mealPlan}</a></td>
             `;
             userDataBody.appendChild(row);
         });
     </script>
+
+<!-- Add this button to your user data page -->
+<button id="clearDatabaseButton" onclick="clearDatabase()">Clear Database</button>
+
+<script>
+function clearDatabase() {
+    // Clear the user data database in local storage
+    localStorage.removeItem('userDataTable');
+    // Reload the page or perform any other action as needed
+    location.reload(); // Reload the page to reflect the cleared database
+}
+</script>
+
 </body>
 </html>
