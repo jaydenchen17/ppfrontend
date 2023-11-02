@@ -5,30 +5,25 @@ permalink: /login
 <html>
 <head>
     <title>User Data</title>
+    <!-- Add your CSS styling here if needed -->
 </head>
 <body>
-    <h1>User Data</h1>
+    <h1>User Data Table</h1>
     <table>
-        <tr>
-            <th>Username</th>
-            <th>Age</th>
-            <th>Weight</th>
-            <th>Height</th>
-            <th>Activity</th>
-            <th>Gender</th>
-            <th>Calorie Maintenance</th>
-        </tr>
-        {% for user in user_data %}
-        <tr>
-            <td>{{ user.username }}</td>
-            <td>{{ user.age }}</td>
-            <td>{{ user.weight }}</td>
-            <td>{{ user.height }}</td>
-            <td>{{ user.activity }}</td>
-            <td>{{ user.gender }}</td>
-            <td>{{ user.calorie_maintenance }}</td>
-        </tr>
-        {% endfor %}
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Age</th>
+                <th>Weight</th>
+                <th>Height</th>
+                <th>Activity Level</th>
+                <th>Gender</th>
+                <th>Calorie Maintenance (kcal)</th>
+            </tr>
+        </thead>
+        <tbody id="data-table">
+            <!-- User data will be dynamically inserted here -->
+        </tbody>
     </table>
 </body>
 </html>
