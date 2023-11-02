@@ -3,6 +3,11 @@ layout: default
 title: Home
 permalink: /calcalculator
 ---
+---
+layout: default
+title: Home
+permalink: /calcalculator
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,6 +64,7 @@ permalink: /calcalculator
         <h1>Calorie Calculator</h1>
         <p>Please input your age, weight, height, activity level, and Gender into the form below and create a username. We will store this information along with your daily calorie maintenance levels in order to provide you with a meal plan so that you may achieve your weight goal. The conversion chart below may help you estimate your metric measurements if you do not know them off the top of your head. If you would like to either lose or gain weight, you can input your desired weight into the calorie calculator, and it will give you a recommended meal plan to achieve the weight you want.</p>
         <form id="calorie-form">
+            <!-- Your form content -->
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" required>
 
@@ -87,62 +93,10 @@ permalink: /calcalculator
 
             <input type="button" value="Calculate Calories" onclick="calculateCalories()">
         </form>
-
         <div id="result"></div>
     </div>
 
     <script>
-        function calculateCalories() {
-            const age = parseFloat(document.getElementById('age').value);
-            const weight = parseFloat(document.getElementById('weight').value);
-            const height = parseFloat(document.getElementById('height').value);
-            const activity = document.getElementById('activity').value;
-            const gender = document.querySelector('input[name="gender"]:checked').value;
-            const username = document.getElementById('username').value;
-
-            const userData = {
-                username: username,
-                age: age,
-                weight: weight,
-                height: height,
-                activity: activity,
-                gender: gender
-            };
-
-            // Calculate the calorie maintenance on the client side
-            const calorie_maintenance = calculateClientCalories(userData);
-
-            // Send the user data to the server to save it
-            saveUserDataOnServer(userData);
-
-            // Display the result
-            const resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = `Hello, ${username}! Your Calorie Maintenance is: ${calorie_maintenance.toFixed(2)} kcal`;
-
-            // If calorie maintenance is under 1000, display a simple link to meal plan 1
-            if (calorie_maintenance < 1000) {
-                const mealPlanLink = document.createElement('a');
-                mealPlanLink.href = '/ppfrontend/mealplans/mealplan1'; // Meal plan 1 (for calorie maintenance under 1000)
-                mealPlanLink.innerText = 'View Your Meal Plan';
-                resultDiv.appendChild(mealPlanLink);
-            } else {
-                // Calculate the meal plan number based on calorie maintenance
-                const mealPlanNumber = Math.floor((calorie_maintenance - 1000) / 250) + 2;
-
-                // Create a button for the meal plan
-                const mealPlanButton = document.createElement('button');
-                mealPlanButton.innerHTML = `View Your Meal Plan`;
-
-                mealPlanButton.addEventListener('click', () => {
-                    // Set the link to the corresponding meal plan based on the meal plan number
-                    const mealPlanLink = `/ppfrontend/mealplans/mealplan${mealPlanNumber}`;
-                    window.location.href = mealPlanLink;
-                });
-
-                // Append the button to the result div
-                resultDiv.appendChild(mealPlanButton);
-            }
-        }
 
         function calculateClientCalories(userData) {
             // Implement your calorie calculation logic here on the client side
@@ -169,16 +123,39 @@ permalink: /calcalculator
             }
         }
 
-        function saveUserDataOnServer(userData) {
-            // Send the user data to the server to save it
-            fetch('/api/saveUserData', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(userData)
-            });
+        function saveUserDataLocally(userData) {
+            // Store the user data in local storage
+            const userDataTable = JSON.parse(localStorage.getItem('userDataTable')) || [];
+            userDataTable.push(userData);
+            localStorage.setItem('userDataTable', JSON.stringify(userDataTable));
         }
+
+
+        function calculateCalories() {
+            const age = parseFloat(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const activity = document.getElementById('activity').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const username = document.getElementById('username').value;
+
+            const userData = {
+                username: username,
+                age: age,
+                weight: weight,
+                height: height,
+                activity: activity,
+                gender: gender
+            };
+
+            // Calculate the calorie maintenance on the client side
+            const calorie_maintenance = calculateClientCalories(userData);
+            saveUserDataLocally(userData);
+
+            // Redirect to the user data page with a query parameter for calorie maintenance
+            window.location.href = `/ppfrontend/user_data.html?calorie_maintenance=${calorie_maintenance}`;
+        }
+
     </script>
 </body>
 </html>

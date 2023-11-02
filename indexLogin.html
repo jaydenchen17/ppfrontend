@@ -1,14 +1,17 @@
 ---
 layout: help
-permalink: /login
+permalink: /user_data.html
 ---
+
 <html>
 <head>
     <title>User Data</title>
-    <!-- Add your CSS styling here if needed -->
+    <style>
+        /* Your CSS styling for the data table here */
+    </style>
 </head>
 <body>
-    <h1>User Data Table</h1>
+    <h1>User Data</h1>
     <table>
         <thead>
             <tr>
@@ -18,12 +21,33 @@ permalink: /login
                 <th>Height</th>
                 <th>Activity Level</th>
                 <th>Gender</th>
-                <th>Calorie Maintenance (kcal)</th>
             </tr>
         </thead>
-        <tbody id="data-table">
-            <!-- User data will be dynamically inserted here -->
+        <tbody id="user-data-table">
+            <!-- User data will be dynamically added here -->
         </tbody>
     </table>
+
+    <script>
+        // Retrieve user data from local storage
+        const userDataTable = JSON.parse(localStorage.getItem('userDataTable')) || [];
+
+        // Get the table body element to append user data
+        const userDataBody = document.getElementById('user-data-table');
+
+        // Loop through user data and create rows in the table
+        userDataTable.forEach(userData => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${userData.username}</td>
+                <td>${userData.age}</td>
+                <td>${userData.weight}</td>
+                <td>${userData.height}</td>
+                <td>${userData.activity}</td>
+                <td>${userData.gender}</td>
+            `;
+            userDataBody.appendChild(row);
+        });
+    </script>
 </body>
 </html>
