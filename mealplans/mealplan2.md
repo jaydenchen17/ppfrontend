@@ -35,4 +35,4 @@ Brown rice (31.25 calories)
 <br>
 Asparagus (31.25 calories)
 
-<a href="https://jaydenchen17.github.io/student/" class="button" style="color: black; background-color: grey;">Home</a>
+<a href="/ppfrontend/" class="button" style="color: black; background-color: grey;">Home</a>

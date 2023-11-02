@@ -33,4 +33,4 @@ A serving of cheese with whole-grain crackers (137.5 calories)
 <br>
 Baked salmon with brown rice and steamed broccoli (437.5 calories)
 
-<a href="https://jaydenchen17.github.io/student/" class="button" style="color: black; background-color: grey;">Home</a>
+<a href="/ppfrontend/" class="button" style="color: black; background-color: grey;">Home</a>
