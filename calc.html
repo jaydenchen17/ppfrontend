@@ -123,7 +123,7 @@ permalink: /calcalculator
             if (calorie_maintenance < 1000) {
                 const mealPlanLink = document.createElement('a');
                 mealPlanLink.href = '/ppfrontend/mealplans/mealplan1'; // Meal plan 1 (for calorie maintenance under 1000)
-                mealPlanLink.innerText = 'View Meal Plan';
+                mealPlanLink.innerText = 'View Your Meal Plan';
                 resultDiv.appendChild(mealPlanLink);
             } else {
                 // Calculate the meal plan number based on calorie maintenance
@@ -131,7 +131,7 @@ permalink: /calcalculator
 
                 // Create a button for the meal plan
                 const mealPlanButton = document.createElement('button');
-                mealPlanButton.innerHTML = `View Meal Plan ${mealPlanNumber}`;
+                mealPlanButton.innerHTML = `View Your Meal Plan`;
 
                 mealPlanButton.addEventListener('click', () => {
                     // Set the link to the corresponding meal plan based on the meal plan number
