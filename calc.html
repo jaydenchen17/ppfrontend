@@ -99,7 +99,30 @@ permalink: /calcalculator
 
     <script>
 
-        
+    function calculateClientCalories(userData) {
+            // Implement your calorie calculation logic here on the client side
+            // Replace this with your actual calculation
+            const age = userData.age;
+            const weight = userData.weight;
+            const height = userData.height;
+            const activity = userData.activity;
+            const gender = userData.gender;
+
+            // Define activity level multipliers
+            const activityLevels = {
+                sedentary: 1.2,
+                lightly_active: 1.375,
+                moderately_active: 1.55,
+                very_active: 1.725
+            };
+
+            // Example calorie calculation (Harris-Benedict equation)
+            if (gender === 'male') {
+                return (88.362 + 13.397 * weight + 4.799 * height - 5.677 * age) * activityLevels[activity];
+            } else {
+                return (447.593 + 9.247 * weight + 3.098 * height - 5.677 * age) * activityLevels[activity];
+            }
+        }
 
         function saveUserDataLocally(userData) {
             // Store the user data in local storage
