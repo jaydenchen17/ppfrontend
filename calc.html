@@ -131,7 +131,25 @@ permalink: /calcalculator
             localStorage.setItem('userDataTable', JSON.stringify(userDataTable));
         }
 
+        function calculateCalories() {
+            const age = parseFloat(document.getElementById('age').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const activity = document.getElementById('activity').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const username = document.getElementById('username').value;
 
+            const userData = {
+                username: username,
+                age: age,
+                weight: weight,
+                height: height,
+                activity: activity,
+                gender: gender
+            };
+
+            // Calculate the calorie maintenance on the client side
+            const calorie_maintenance = calculateClientCalories(userData);
         
             // Calculate the meal plan based on calorie maintenance
             let mealPlan = '';
